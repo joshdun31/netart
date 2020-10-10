@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color: #ec3237;
+}
+img,p,h1,h2,h3,h4,h5,h6{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+a{
+  text-decoration: none;
+  color: #fff9e8;
+  transition: all 0.1s linear;
+}
+a:hover{
+  opacity: 0.7;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #dddddd;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color);
+  border-radius: 20px;
+}
+.App{
+  background: linear-gradient(#fffffb,#fff9b1);
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+.App-header{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  margin: 0rem auto;
+}
+.App-logo{
+  height: 100%;
+  width: 40%;
+}
+.App-grid{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin:0 0.6rem 1.1rem;
+  position: relative;
+}
+.App-col1{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+.App-col1 img{
+  width: 100%;
+  height: 100%;
+
+}
+.App-col2{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding: 0px;
+  position: relative;
+  text-align:justify;
+}
+.App-col2 img{
+  width: 100%;
+  padding: 10px 0px !important;
+
+}
+ul{
+  margin:0.3rem 0 0.3rem 1rem;
+}
+.main-content{
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+.main-content .last-para{
+  margin:0.2rem 0.8rem !important;
+}
+.content2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px auto;
+  position: relative;
+}
+.content2-inside{
+  position: relative;
+  margin:1px auto;
+  width: 100%;
+}
+.content2-inside p{
+  align-self: center;
+  display: block;
+  margin: 1px auto;
+  text-align: center;
+  padding: 0.5rem 0.8rem !important;
+}
+.content2-inside img{
+  width: 100%;
+}
+ .content2-inside .App-motor{
+  align-self: center;
+  display: block;
+  margin: 1px auto;
+  height: auto;
+  width: 85%;
+}
+hr{
+  background-color: var(--color);
+  border: 0px;
+  width: 100%;
+  height: 0.1rem;
+}
+.content3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 13px auto;
+}
+.content3 p{
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+.content3 h5{
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto 6px auto !important;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.content3 span{
+  color: var(--color);
+  font-size: 1.1rem;
+}
+.divider{
+  width: 100%;
+  padding: 0.3rem 0rem;
+}
+.footer{
+  background: var(--color);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  color: #fff9e8;
+  padding: 1.8rem 0;
+}
+.footer div{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.footer div p{
+  display: inline;
+  margin: 0 8px !important;
+}
+.footer div a{
+  margin:0 10px;
+}
+
+@media screen and (max-width:700px){
+  .footer{
+    flex-direction: column !important;
+  }
+  .App-grid{
+    display: grid !important;
+    grid-template-columns: 100%;
+    margin:0 10px 10px;
+  }
+  .App-col1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  .App-col1 img{
+    width: 30%;
+    height: auto;
+  }
+  .App-col2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+  }
+  .App-col2 img{
+    width: 100%;
+    padding: 10px 0px !important;
+  
+  }
+  .App-header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    margin: 1px auto;
+  }
+  .footer div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem 0;
+  }
+  .footer{
+    padding: 1rem 0;
+  }
+}
