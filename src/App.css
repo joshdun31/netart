@@ -105,7 +105,7 @@ ul{
   display: block;
   margin: 1px auto;
   text-align: center;
-  padding: 0.5rem 0.8rem !important;
+  padding: 0.8rem 0.8rem !important;
 }
 .content2-inside img{
   width: 100%;
@@ -128,6 +128,7 @@ hr{
   align-items: center;
   justify-content: center;
   margin: 10px auto 13px auto;
+  padding: 0 10px;
 }
 .content3 p{
   align-items: center;
@@ -175,7 +176,7 @@ hr{
   margin:0 10px;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:720px){
   .footer{
     flex-direction: column !important;
   }
